@@ -1,3 +1,5 @@
+package human;
+
 public class Human {
     private    int yearOfBirth;
     public String name;
@@ -48,7 +50,9 @@ public class Human {
         } else {
             this.town = town;
         }
-
+    }
+    public static void printInfo(Human human) {
+        System.out.println("Привет! Меня зовут " + human.name + " Я из города " + human.getTown() + " Я родился в " + human.getYearOfBirth() + " году. Я работаю на должности " + human.jobTitle + ". Будем знакомы!");
     }
 }
 
